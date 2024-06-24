@@ -2,11 +2,11 @@ class ServicoExercicio {
   Somar(num1, num2) {
     if (isNaN(num1) || isNaN(num2)) {
       throw new Error(
-        "Não dá para somar com valores inválidos (use apenas valores númericos)"
+        "Valores inválidos fornecidos (apenas números são permitidos)"
       );
     }
     if (num2 === null) {
-      throw new Error("Não é possivel somar sem preencher todos os campos");
+      throw new Error("Todos os campos devem ser preenchidos para somar");
     }
 
     return num1 + num2;
@@ -15,11 +15,11 @@ class ServicoExercicio {
   Subtrair(num1, num2) {
     if (isNaN(num1) || isNaN(num2)) {
       throw new Error(
-        "Não dá para subtrair com valores inválidos (use apenas valores númericos)"
+        "Valores inválidos fornecidos (apenas números são permitidos)"
       );
     }
     if (num2 === null) {
-      throw new Error("Não é possivel subtrair sem preencher todos os campos");
+      throw new Error("Todos os campos devem ser preenchidos para subtrair");
     }
 
     return num1 - num2;
@@ -28,16 +28,16 @@ class ServicoExercicio {
   Dividir(num1, num2) {
     if (isNaN(num1) || isNaN(num2)) {
       throw new Error(
-        "Não é possível dividir com valores inválidos (use apenas valores númericos)"
+        "Valores inválidos fornecidos (apenas números são permitidos)"
       );
     }
     if (num2 === 0) {
       throw new Error(
-        "Não é possivel dividir por zero, pois o resultado será infinito"
+        "Divisão por zero não permitida, pois resulta em infinito"
       );
     }
     if (num1 === null) {
-      throw new Error("Não é possivel dividir sem preencher todos os campos");
+      throw new Error("Todos os campos devem ser preenchidos para dividir");
     }
 
     return num1 / num2;
@@ -46,12 +46,12 @@ class ServicoExercicio {
   Multiplicar(num1, num2) {
     if (isNaN(num1) || isNaN(num2)) {
       throw new Error(
-        "Não dá para multiplicar com valores inválidos (use apenas valores númericos)"
+        "Valores inválidos fornecidos (apenas números são permitidos)"
       );
     }
     if (num1 === null || num2 === null) {
       throw new Error(
-        "Não é possivel multiplicar sem preencher todos os campos"
+        "Todos os campos devem ser preenchidos para multiplicar"
       );
     }
     return num1 * num2;
